@@ -1,0 +1,5 @@
+D:\BAHASA PEMROGRAMAN\Rust\Projek\Rust-Saas-API\mini_saas_api\target\debug\build\serde-892da979804af6df\build_script_build-892da979804af6df.d: C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\build.rs
+
+D:\BAHASA PEMROGRAMAN\Rust\Projek\Rust-Saas-API\mini_saas_api\target\debug\build\serde-892da979804af6df\build_script_build-892da979804af6df.exe: C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\build.rs
+
+C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\build.rs:
