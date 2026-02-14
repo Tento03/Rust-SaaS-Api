@@ -1,9 +1,8 @@
+use std::net::SocketAddr;
+
 mod handlers;
 mod models;
 mod routes;
-
-use std::net::SocketAddr;
-use tracing_subscriber;
 
 #[tokio::main]
 async fn main() {
@@ -13,7 +12,7 @@ async fn main() {
 
     let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
 
-    println!("🚀 Server running at http://{}", addr);
+    println!("Server running at http://{}", addr);
 
     axum::serve(tokio::net::TcpListener::bind(addr).await.unwrap(), app)
         .await
