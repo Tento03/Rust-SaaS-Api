@@ -8,7 +8,7 @@ mod routes;
 async fn main() {
     tracing_subscriber::fmt::init();
 
-    let app = routes::create_routes();
+    let app = routes::health_routes::create_routes();
 
     let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
 
