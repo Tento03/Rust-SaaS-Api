@@ -15,6 +15,7 @@ pub struct AppState {
 #[tokio::main]
 async fn main() {
     dotenv().ok();
+
     tracing_subscriber::fmt::init();
 
     let pool = config::database::init_db().await;
