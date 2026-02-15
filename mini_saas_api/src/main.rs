@@ -4,6 +4,7 @@ use dotenvy::dotenv;
 use sqlx::MySqlPool;
 
 mod config;
+mod errors;
 mod handlers;
 mod models;
 mod routes;
@@ -23,7 +24,7 @@ async fn main() {
 
     let state = AppState { db: pool };
 
-    let app = routes::health_routes::create_routes(state);
+    let app = routes::task_routes::create_routes(state);
 
     let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
 
