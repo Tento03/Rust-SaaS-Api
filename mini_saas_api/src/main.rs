@@ -1,6 +1,7 @@
 use std::net::SocketAddr;
 
 use dotenvy::dotenv;
+use sqlx::MySqlPool;
 
 mod config;
 mod handlers;
@@ -9,7 +10,7 @@ mod routes;
 
 #[derive(Clone)]
 pub struct AppState {
-    pub db: sqlx::MySqlPool,
+    pub db: MySqlPool,
 }
 
 #[tokio::main]
